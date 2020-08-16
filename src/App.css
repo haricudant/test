@@ -1,0 +1,28 @@
+/* Navbar */
+.navbar {
+  background-color: #0b25e5;
+  color: "white";
+  box-shadow: 3px 3px 5px #0c1642;
+  opacity: 0.8;
+}
+
+/* Home.js */
+.outer > * {
+  display: inline-block;
+}
+
+.WeatherGirl {
+  width: 85%;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.bg-level1 {
+  background-color: #f2f2f2;
+}
+
+.bg-brand1 {
+  background-color: #0b25e5;
+  color: white;
+}
+
