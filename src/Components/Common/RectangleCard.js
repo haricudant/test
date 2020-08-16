@@ -1,9 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 
@@ -20,6 +18,7 @@ const useStyles = makeStyles({
   },
   title: {
     fontSize: 14,
+    textAlign:"center",
   },
   pos: {
     marginBottom: 14,
@@ -42,7 +41,7 @@ export default function SimpleCard(props) {
         <Card className={classes.root}>
           <CardContent>
             <Typography className={classes.title} gutterBottom>
-              Temperature difference
+              <b> Temperature difference</b>
             </Typography>
             <Typography
               className={classes.title}
@@ -55,16 +54,15 @@ export default function SimpleCard(props) {
               className={classes.title}
               color="textSecondary"
               gutterBottom
-              
             >
-              Min Temperature difference: {Math.abs(props.minTemp).toFixed(2)}°C
+              Max. Temperature difference: {Math.abs(props.maxTemp).toFixed(2)}°C
             </Typography>
             <Typography
               className={classes.title}
               color="textSecondary"
               gutterBottom
             >
-              Min Temperature difference: {Math.abs(props.minTemp).toFixed(2)}°C
+              Min. Temperature difference: {Math.abs(props.minTemp).toFixed(2)}°C
             </Typography>
           </CardContent>
         </Card>
