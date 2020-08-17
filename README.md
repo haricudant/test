@@ -1,8 +1,8 @@
 <!-- Instructions to install and run this project -->
 <h2 class = "display-2"> OpenWeather API </h2>
-Instructions
+<h3>Instructions</h3>
 <h4>git init</h4>
-<h4> git clone "github_url"</h4>
+<h4> git clone "https://github.com/haricudant/test.git"</h4>
 <h4>npm install</h4>
 <h4>npm start<h4>
 
