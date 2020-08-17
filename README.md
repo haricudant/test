@@ -6,6 +6,7 @@
 <h4>npm install</h4>
 <h4>npm start<h4>
 
+<h6> Project live url: "https://haricudant.github.io/test/"</h6>
 <h2> Candidate detail:</h2>
 <h4>Name: Hari Narayanan.<h4>
 <h5>Test: Axonista - (Problem-2)<h4>
