@@ -12,5 +12,5 @@
 <h2> Candidate detail:</h2>
 <h4>Name: Hari Narayanan.<h4>
 <h5>Test: Axonista - (Problem-2)<h4>
-<br><b>Main: haricudant@gmail.com</b></br>
+<br><b>Email: haricudant@gmail.com</b></br>
 <br><b>secondary mail: hnarayanan5@gmail.com</b></br>
