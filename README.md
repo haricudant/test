@@ -1,11 +1,13 @@
 <!-- Instructions to install and run this project -->
 <h2 class = "display-2"> OpenWeather API </h2>
 <h3>Instructions</h3>
-<h4>git init</h4>
-<h4> git clone "https://github.com/haricudant/test.git"</h4>
-<h4>npm install</h4>
-<h4>npm start<h4>
-
+<ul>
+<h4><li>git init</li></h4>
+<h4> <li>git clone "https://github.com/haricudant/test.git"</li></h4>
+<h4><li>cd [local repository] </li></h4>
+<h4><li>npm install</li></h4>
+<h4><li>npm start</li><h4>
+<ul>
 <h6> Project live url: "https://haricudant.github.io/test/"</h6>
 <h2> Candidate detail:</h2>
 <h4>Name: Hari Narayanan.<h4>
