@@ -44,7 +44,7 @@ export default class Home extends Component {
   //*****************************************User entered location function*********************************************************
   getWeather = async (e) => {
     const api_url = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${this.state.userInputState},${this.state.userInputCountry}&appid=${API_KEY}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${this.state.userInputState},${this.state.userInputCountry}&appid=${API_KEY}&units=metric`
     );
 
     const data = await api_url.json();
@@ -74,9 +74,8 @@ export default class Home extends Component {
       });
     }
   };
-  
+
   componentDidCatch(error) {
-    
     // Display fallback UI
     this.setState({ error: true });
     // can also log the error to an error reporting service
@@ -87,11 +86,10 @@ export default class Home extends Component {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(async (position) => {
         const location_url = await fetch(
-          `http://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${API_KEY}&units=metric`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${API_KEY}&units=metric`
         );
         const data = await location_url.json();
 
-        console.log(data.main.temp);
         if (data) {
           // setting state values from APIdata
           this.setState({
@@ -154,7 +152,6 @@ export default class Home extends Component {
                   error={this.state.error}
                   helperText={this.state.errorMessage}
                   onChange={(e, value) => {
-                    console.log(e.target.value);
                     this.setState({
                       userInputState: e.target.value,
                     });
