@@ -75,12 +75,6 @@ export default class Home extends Component {
     }
   };
 
-  componentDidCatch(error) {
-    // Display fallback UI
-    this.setState({ error: true });
-    // can also log the error to an error reporting service
-  }
-
   // *************************function to fetch current location details ***************************************
   componentDidMount() {
     if (navigator.geolocation) {
